@@ -8,5 +8,7 @@ namespace MoviesAPI.Models
         {
 
         }
+
+        public DbSet<Movie> Movies { get; set; }
     }
 }
