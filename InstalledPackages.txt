@@ -1,1 +1,7 @@
+Also available in MoviesAPI.csproj file
+List:
 Microsoft.EntityFrameworkCore.InMemory
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.VisualStudio.Web.CodeGeneration.Design
+Swashbuckle.AspNetCore
