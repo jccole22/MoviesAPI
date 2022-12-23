@@ -4,11 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MoviesAPI.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    // Had to comment out while working. Uncomment if it was going to be deployed
+    //[Route("api/[controller]")]
+    //[ApiController]
     public class ErrorsController : ControllerBase
     {
-        [Route("/error-development")]
+        //[Route("/error-development")]
         public IActionResult HandleErrorDevelopment([FromServices] IHostEnvironment hostEnvironment)
         {
             if (!hostEnvironment.IsDevelopment())
@@ -21,13 +22,13 @@ namespace MoviesAPI.Controllers
             return Problem(detail: exceptionHandlerFeature.Error.StackTrace, title: exceptionHandlerFeature.Error.Message);
         }
 
-        [Route("/error")]
+        //[Route("/error")]
         public IActionResult HandleError()
         {
             return Problem();
         }
 
-        [HttpGet("Throw")]
+        //[HttpGet("Throw")]
         public IActionResult Throw()
         {
             throw new Exception("Sample Exception");

@@ -18,11 +18,11 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.UseExceptionHandler("/error-development");
+    //app.UseExceptionHandler("/error-development");
 }
 else
 {
-    app.UseExceptionHandler("/error");
+    //app.UseExceptionHandler("/error");
 }
 
 app.UseHttpsRedirection();
